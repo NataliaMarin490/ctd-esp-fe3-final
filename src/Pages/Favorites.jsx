@@ -1,14 +1,24 @@
-
 import Card from "../Components/Card";
+import { useDoctorStates } from "../Components/utils/global.context";
 
 const Favorites = () => {
-  // const { state } = useRecipeStates();
+  const {
+    state: { favs },
+  } = useDoctorStates();
+
   return (
     <>
-      <div className="list-container">
-        {/* {state.recipes.map((recipe) => (
-          <Card key={recipe.id} recipe={recipe} />
-        ))} */}
+      <h1>Favorites</h1>
+      <div className="card-grid">
+        {favs.map((dentist) => (
+          <Card
+            key={dentist.id}
+            name={dentist.name}
+            username={dentist.username}
+            id={dentist.id}
+            hideFav={true}
+          />
+        ))}
       </div>
     </>
   );

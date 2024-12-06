@@ -12,11 +12,15 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
+  background-color: rgb(226, 212, 86);
+  padding: 5px;
+  margin: 5px;
   border: none;
-  width: 100%;
+  width: 20%;
+  height: 40%;
   cursor: pointer;
+  border-radius: 5px;
+  align-self: first baseline;
 }
 
 h1{
@@ -135,8 +139,4 @@ tr:nth-child(even) {
 
 h3, h4 {
   margin: 10px 0 0 0;
-}
-
-.pages-container {
-  height: 72vh;
 }
